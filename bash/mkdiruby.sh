@@ -26,6 +26,9 @@ CONTENT
 # Initialize Git repo
 git init ./$1
 
+# Create ./ARGV/.env
+touch ./$1/.env
+
 # Write ".env" into ./ARGV/.gitignore
 echo ".env" > ./$1/.gitignore
 
