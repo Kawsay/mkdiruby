@@ -10,14 +10,8 @@ then
   git push
   git status
 else
-  while [ $# -ne 0 ]
-    do
-      echo "Current Parameter: $1 , Remaining $#"
-      #Pass $1 to some bash function or do whatever
-      shift
-  done
   git add .
-  git commit -m $#
+  git commit -m "$1 $2 $3 $4 $5 $6 $7 $8 $9"
   git push
   git status
 fi
