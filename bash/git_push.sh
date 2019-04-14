@@ -3,10 +3,10 @@
 # Check/get arguments
 if [ $# -eq 0 ]
 then
-  echo "Lovely comment :"
-  read -e comment
+  echo "Lovely comment: "
+  IFS= read -r comment
   git add .
-  git commit -m $comment
+  git commit -m "$comment"
   git push
   git status
 else
